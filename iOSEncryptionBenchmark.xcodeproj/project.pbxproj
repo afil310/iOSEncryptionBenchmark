@@ -85,13 +85,13 @@
 		5561F40921AA48B10025C29D /* iOSEncryptionBenchmark */ = {
 			isa = PBXGroup;
 			children = (
+				557527B921ABBBC100101FAA /* Storyboards */,
 				55FAEECD21AACF260054B755 /* HelpPage */,
 				5561F40A21AA48B10025C29D /* AppDelegate.swift */,
 				5537693621AA4B2A0072FC82 /* EncryptionBenchmark.swift */,
 				55FAEECB21AACCDA0054B755 /* HelpPageController.swift */,
 				5537693C21AA4CD60072FC82 /* LogBarChartView.swift */,
 				5537693821AA4C5E0072FC82 /* EncryptionAlgorithm.swift */,
-				557527B921ABBBC100101FAA /* Storyboards */,
 				5561F41121AA48B20025C29D /* Assets.xcassets */,
 				5561F41621AA48B20025C29D /* Info.plist */,
 			);
