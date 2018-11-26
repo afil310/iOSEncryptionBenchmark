@@ -33,8 +33,8 @@
 		5561F41121AA48B20025C29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5561F41421AA48B20025C29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5561F41621AA48B20025C29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55DC8CEF21AC2E3F00059553 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		55DC8CF021AC31F400059553 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		55DC8CEF21AC2E3F00059553 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		55DC8CF021AC31F400059553 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		55FAEECB21AACCDA0054B755 /* HelpPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPageController.swift; sourceTree = "<group>"; };
 		55FAEECE21AACF3D0054B755 /* benchmark.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = benchmark.html; sourceTree = "<group>"; };
 		55FAEECF21AACF3D0054B755 /* chronometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chronometer.png; sourceTree = "<group>"; };
