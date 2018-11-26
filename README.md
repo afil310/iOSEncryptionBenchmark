@@ -5,7 +5,7 @@
 
 ## Description
 The app shows the difference between the performance of symmetric and asymmetric encryption algorithms, depending on chosen parameters.
-<p align="center"><img src ="https://raw.githubusercontent.com/afil310/iOSEncryptionBenchmark/master/Screenshots/Diagram.png" width="300px"/> <img src ="https://raw.githubusercontent.com/afil310/iOSEncryptionBenchmark/master/Screenshots/About.png" width="300px"/> <img src ="https://raw.githubusercontent.com/afil310/iOSEncryptionBenchmark/master/Screenshots/iOSEncryptionBenchmark.gif" width="300px"/></p>
+<p align="center"><img src ="https://raw.githubusercontent.com/afil310/iOSEncryptionBenchmark/master/Screenshots/Diagram.png" width="200px"/> <img src ="https://raw.githubusercontent.com/afil310/iOSEncryptionBenchmark/master/Screenshots/About.png" width="200px"/> <img src ="https://raw.githubusercontent.com/afil310/iOSEncryptionBenchmark/master/Screenshots/iOSEncryptionBenchmark.gif" width="200px"/></p>
 
 ## Requirements
 
