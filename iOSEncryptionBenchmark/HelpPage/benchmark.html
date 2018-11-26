@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="pages.css">
+    <title>Symmetric and asymmetric encryption benchmark</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <p class="text">
+    &nbsp;One of the most important differences between symmetric and asymmetric encryption is encryption speed. Here you can view the performance difference between <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">RSA</a> (asymmetric) and <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES</a> (symmetric) algorithms measured on your smartphone.
+    </p>
+    <div align="center">
+      <img src="chronometer.png" alt="chronometer" height="80" width="80">
+    </div>
+    <p class="text">
+    &nbsp;Asymmetric encryption has a limit for the maximum length of the encrypted message. Therefore, to encrypt a larger amount of data we have to split it into short chunks and encrypt each one of them separately. To decrypt the message we would have to decrypt each chunk and merge them in the correct order.
+    </p>
+    <p class="text">
+    &nbsp;A few technichal details about the performance test:
+    </p>
+    <ul class="text">
+      <li>You can select encryption algorithms and keys by tapping on the table cells</li>
+      <li>The performance depends on the current CPU usage, background processes activity, available memory, etc. </li>
+      <li>In order to show the correlation between the performance and the input data size, the encryption is performed on random data of various sizes, from 1kB to 10MB</li>
+      <li>The application uses the Apple encryption algorithms implementation for iOS. See <a href="https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption">Apple Developer Documentation</a> for details.</li>
+      <li>For AES encryption a randomly generated session key is used. The session key, in turn, is encrypted with a RSA key and appended to the encrypted data. If a 2048-bit RSA key is selected then a 128-bit AES key is generated. For a 4096-bit RSA key a 256-bit AES key is generated.</li>
+      <li>The short algorithm names are used in the table for the brevity:
+        <ul class="text">
+          <li><mmn>RSA 1</mmn>: RSA encryption <a href="https://en.wikipedia.org/wiki/PKCS_1">PKCS1</a></li>
+          <li><mmn>RSA 256</mmn>: RSA encryption <a href="https://en.wikipedia.org/wiki/Optimal_asymmetric_encryption_padding">OAEP</a> SHA-256</li>
+          <li><mmn>RSA 512</mmn>: RSA encryption <a href="https://en.wikipedia.org/wiki/Optimal_asymmetric_encryption_padding">OAEP</a> SHA-512</li>
+          <li><mmn>AES 1</mmn>: AES encryption OAEP SHA-1 <a href="https://en.wikipedia.org/wiki/Galois/Counter_Mode">GCM</a></li>
+          <li><mmn>AES 224</mmn>: AES encryption OAEP SHA-224 <a href="https://en.wikipedia.org/wiki/Galois/Counter_Mode">GCM</a></li>
+          <li><mmn>AES 512</mmn>: AES encryption OAEP SHA-512 <a href="https://en.wikipedia.org/wiki/Galois/Counter_Mode">GCM</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="header">Credits</div>
+    <p class="text">
+    <ul class="text">
+        <li><a href="https://github.com/danielgindi/Charts">Charts</a></li>
+        <li>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC 3.0 BY</a></li>
+    </ul>
+    </p>
+  </body>
+</html>

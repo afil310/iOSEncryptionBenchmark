@@ -1,0 +1,99 @@
+@font-face
+{
+  font-family: 'Sans Forgetica';
+  src: local('Sans Forgetica'),url('SansForgetica-Regular.otf') format('opentype');
+}
+
+body {
+	background-color: #edfdff;
+}
+
+.header {
+	font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+	color: #222;
+}
+
+.text {
+	font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
+	color: #222;
+}
+
+
+.links-header {
+  font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+}
+
+code {
+ 	color: #600;
+	border: 1px solid #edc;
+ 	border-radius: .25em;
+ 	padding: 0 0.3em;
+ 	background: #fafafa;
+}
+
+mmn {
+  color: #600;
+  border: 1px solid #edc;
+  border-radius: .25em;
+  padding: 0 0.3em;
+  background: #fafafa;
+  font-family: Georgia, serif;
+}
+
+mmi {
+  color: #600;
+  border: 1px solid #edc;
+  border-radius: .25em;
+  padding: 0 0.3em;
+  background: #fafafa;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+table {
+	width: 100%;
+	border: 1px solid #ccc;
+  font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
+  font-size: 0.875em;
+}
+
+td {
+  padding: 5px;
+}
+
+th {
+  padding: 5px;
+}
+
+.left-column {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.cth {
+  background-color: #aaddff;
+  text-align: left;
+}
+
+.ctd {
+  border: 1px solid #aaa;
+  text-align: center;
+  padding: 2px;
+}
+
+.ctr:nth-child(odd) {
+  background-color: #c9e9ff;
+  padding: 2px;
+}
+
+.ctr:nth-child(even) {
+  background-color: #d6eeff;
+  padding: 2px;
+}
