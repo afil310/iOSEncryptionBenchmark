@@ -12,10 +12,7 @@ import WebKit
 class HelpPageController: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView!
-
-    @IBOutlet weak var progressView: UIProgressView!
-    
-   
+    @IBOutlet weak var navigationBar: UINavigationBar!
     
     var disableNavControllerGestureForInfoPage = false
     var helpPageName = "benchmark"
@@ -44,13 +41,12 @@ class HelpPageController: UIViewController, WKNavigationDelegate {
         webView.isOpaque = false //prevents white blank page
         webView.allowsBackForwardNavigationGestures = true
         webView.navigationDelegate = self
-        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
         
         view.addSubview(webView)
         NSLayoutConstraint.activate([
             webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             webView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            webView.topAnchor.constraint(equalTo: progressView.bottomAnchor),
+            webView.topAnchor.constraint(equalTo: navigationBar.bottomAnchor),
             webView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
             ])
     }
@@ -69,17 +65,5 @@ class HelpPageController: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = !webView.canGoBack
         self.disableNavControllerGestureForInfoPage = webView.canGoBack
-    }
-    
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == "estimatedProgress" {
-            progressView.alpha = 1.0
-            progressView.progress = Float(webView.estimatedProgress)
-            if progressView.progress == 1.0 {
-                UIView.animate(withDuration: 1.0, animations: {
-                    self.progressView.alpha = 0.0
-                })
-            }
-        }
     }
 }

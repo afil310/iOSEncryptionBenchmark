@@ -24,7 +24,7 @@ $ pod install
 
 ## Author
 
-Andrey Filonov, andrey.filonov@gmail.com
+Andrey Filonov andrey.filonov@gmail.com
 
 ## License
 

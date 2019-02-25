@@ -207,8 +207,8 @@ class EncryptionBenchmark: UIViewController {
         tappedField.inputView = picker
         selectedAlgorithm = tableTextFields[selected][0]!.text!
         selectedKeySize = Int(tableTextFields[selected][1]!.text!)!
-        picker.selectRow(Array(algorithmNames).index(of: selectedAlgorithm)!, inComponent: 0, animated: true)
-        picker.selectRow(keySizes.index(of: selectedKeySize)!, inComponent: 1, animated: true)
+        picker.selectRow(Array(algorithmNames).firstIndex(of: selectedAlgorithm)!, inComponent: 0, animated: true)
+        picker.selectRow(keySizes.firstIndex(of: selectedKeySize)!, inComponent: 1, animated: true)
     }
     
     
